@@ -1,0 +1,736 @@
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background-color: #fffaf4;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    margin-top: 0px;
+    height: 60px;
+    position: relative;
+    position: sticky; 
+    top: 0; 
+    z-index: 999;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    width: 70px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.brand-nike, .brand-react {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.brand-nike {
+    color: #f97316;
+}
+
+.brand-react {
+    color: #000;
+}
+
+.nav-right {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+    margin-right: 100px;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.nav-right li a.active {
+    color: #000;
+    font-weight: 700;
+}
+
+.menu-icon {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .menu-icon {
+        display: block; 
+    }
+    
+    .nav-right {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 55px; 
+        left: 0;
+        background-color: #fffaf4;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 10px 0;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .nav-right.active {
+        display: flex;
+    }
+    
+    .nav-right li {
+        margin: 10px 0;
+    }
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fffaf5;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    background-color: #FFF9F4;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-left,
+.banner-right {
+    max-width: 700px;
+}
+
+.banner-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-right {
+    flex: 1;
+    margin-left: 140px;
+}
+
+.banner-right h2 {
+    color: #ff7a45;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.banner-right h1 {
+    font-size: 60px;
+    color: #2d2d3f;
+    margin: 10px 0;
+}
+
+.banner-right p {
+    max-width: 420px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.banner-right button {
+    background: #3d5afe;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .banner-right {
+        margin-left: 0;
+    }
+
+    .banner-right h2,
+    .banner-right h1,
+    .banner-right p,
+    .banner-right button {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        padding: 30px 20px;
+    }
+
+    .banner-right h1 {
+        font-size: 40px;
+    }
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color:#E5E5E5 ;
+}
+
+.casual-shoes {
+    margin-top: 20px;
+    background-color:#E5E5E5 ;
+    padding: 20px 0;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 110px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #363958;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+.card {
+    flex: 0 0 33.333%;
+    max-width: 420px;
+    min-height: 450px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sneaker-img{
+    background-color: #E5E5E5;
+    border-radius: 15px;
+}
+
+.image-card {
+    background-color: #837d7d;
+    border-radius: 22px;
+    padding: 35px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    background-color: #948e8e; 
+    border-radius: 15px;       
+    padding: 10px;             
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.35));
+}
+
+.card-body {
+    padding: 18px 6px;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+.card-body h4 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #363958;
+}
+
+.card-body p {
+    font-size: 22px;
+}
+
+.card-footer {
+    padding: 12px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #FA804C;
+    margin: 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.buy-btn {
+    background: #3D4FF3;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 50px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+
+    .section-title {
+        margin-left: 20px;
+        margin-top: 0;
+        font-size: 28px;
+    }
+
+    .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+        min-height: auto;
+    }
+
+    .image-card {
+        height: 220px;
+        padding: 18px;
+    }
+
+    .image-card img {
+        width: 85%;
+    }
+
+    .card-body h4 {
+        font-size: 22px;
+    }
+
+    .card-body p {
+        font-size: 18px;
+    }
+
+    .buy-btn {
+        font-size: 12px;
+        padding: 7px 14px;
+        height: 40px;
+    }
+}
+
+
+
+.formal-shoes-section {
+    margin-top: 20px;
+    background-color: #E5E5E5;
+    padding: 20px 0;
+}
+
+.section-title {
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 110px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: #363958;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: nowrap;
+}
+
+.product-card {
+    flex: 0 0 33.333%;
+    max-width: 420px;
+    min-height: 450px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 35px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+.product-info {
+    padding: 18px 6px;
+    flex-grow: 1;
+    margin-top: 0;
+}
+
+.product-name {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #363958;
+}
+
+.product-desc {
+    font-size: 22px;
+}
+
+.product-footer {
+    padding: 12px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    color: #FA804C;
+    margin: 0;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.buy-now-btn {
+    background: #3D4FF3;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 50px;
+}
+
+/* Responsive Section */
+@media (max-width: 1024px) {
+    .product-grid {
+        flex-wrap: wrap;
+    }
+    .product-card {
+        flex: 0 0 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        margin-left: 20px;
+        margin-top: 0;
+        font-size: 28px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        flex: 0 0 100%;
+        max-width: 90%;
+        min-height: auto;
+    }
+
+    .img-container {
+        height: 220px;
+        padding: 18px;
+    }
+
+    .product-img {
+        width: 85%;
+    }
+
+    .product-name {
+        font-size: 22px;
+    }
+
+    .product-desc {
+        font-size: 18px;
+    }
+
+    .buy-now-btn {
+        font-size: 12px;
+        padding: 7px 14px;
+        height: 40px;
+    }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1100px;
+    width: 90%;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 600px;
+}
+
+.icon-container {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: #333;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.description {
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .info-card {
+        margin-left: 0;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .right-side img {
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-card {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .description {
+        font-size: 0.85rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.newsletter-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    /* Section mein padding lazmi rakhein */
+    padding: 20px; 
+}
+
+.newsletter-card {
+    background-color: #ffffff;
+    /* Width 100% ki jagah 95% karein taaki sides par gap nazar aaye */
+    width: 95%; 
+    max-width: 1250px;
+    padding: 80px 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin: 0 auto;
+    height: 190px;
+}
+
+.newsletter-title {
+    color: #363958;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+    margin-top: -50px;
+}
+
+.input-container {
+    display: flex;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #495057;
+}
+
+.subscribe-btn {
+    background-color: #4353ff;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #3544d8;
+}
+
+@media (max-width: 768px) {
+    .newsletter-section {
+        padding: 10px;
+    }
+
+    .newsletter-card {
+        /* Mobile par width thodi aur kam karein taaki gap wazeh ho */
+        width: 90%; 
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .newsletter-title {
+        margin-top: 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-card {
+        width: 88%; 
+        padding: 40px 15px;
+        border-radius: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 24px;
+    }
+}
